@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: url('photos/CICTBG.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(to right, #7a0c0c, #a52a2a);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    margin: 5px;
+    font-size: 30px;
+}
+
+.title p {
+    margin: 0;
+}
+
+.title h2 {
+    margin: 5px;
+    font-size: 20px;
+}
+
+/* CONTAINER */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* FORM */
+form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* FIXED INPUT + SELECT (IMPORTANT) */
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ALIGN LABEL + INPUT */
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BUTTON */
+button {
+    grid-column: span 5;
+    padding: 10px;
+    background: #8c1d1d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5e0f0f;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #8c1d1d;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+th:last-child,
+td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ACTION BUTTONS */
+.edit, .delete {
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.edit {
+    background: orange;
+}
+
+.edit:hover {
+    background: darkorange;
+}
+
+.delete {
+    background: red;
+}
+
+.delete:hover {
+    background: darkred;
+}
